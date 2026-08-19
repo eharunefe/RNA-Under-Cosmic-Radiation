@@ -25,9 +25,8 @@ samples_df = clean_df.groupby("SYMBOL")[samples].mean()
 samples_df.insert(0, "GENE NAME", genenames)
 
 
-print("Tablo boyutu")
-print("genler " + str(samples_df.shape[0]))
-print("nümuneler " + str(samples_df.shape[1] - 1))
+print("Genes " + str(samples_df.shape[0]))
+print("Samples " + str(samples_df.shape[1] - 1))
 
 
 print(samples_df.head())
